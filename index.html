@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOTOYAN.RU - Студия Красоты Кристины Ботоян</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="#" class="logo">BOTOYAN.RU</a>
+      </h1>
+
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+        <a href="#" class="logo">BOTOYAN.RU</a>
+        <ul class="navbar-list">
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>
+              <span>Главная</span>
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#service" class="navbar-link" data-nav-link>
+              <span>Услуги</span>
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#gallery" class="navbar-link" data-nav-link>
+              <span>Галерея</span>
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>
+              <span>Контакты</span>
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#cta" class="navbar-link" data-nav-link id="reviewsBtn">
+              <span>Отзывы</span>
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-action">
+        <button class="btn btn-primary" onclick="window.location.href='tel:+79853569006'">
+          <span>Записаться</span>
+          <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+          <h2 class="h1 hero-title">
+            Студия красоты <strong>Кристины Ботоян</strong>
+          </h2>
+          <p class="hero-text">
+            Студия Кристины — это профессиональный маникюр и ресницы с любовью к деталям. Уютная атмосфера, стерильные инструменты и результат, который радует каждый день
+          </p>
+          <button class="btn btn-primary" onclick="window.location.href='tel:+79853569006'">
+            <span>Записаться</span>
+            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+      </section>
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features">
+        <div class="container">
+          <ul class="features-list">
+            <li class="features-item">
+              <div class="item-icon">
+                <ion-icon name="shield-checkmark-outline"></ion-icon>
+              </div>
+              <div>
+                <h3 class="h4 item-title">Безопасно</h3>
+                <p class="item-text">Одноразовые пилочки и перчатки для каждого клиента</p>
+              </div>
+            </li>
+            <li class="features-item">
+              <div class="item-icon">
+                <ion-icon name="water-outline"></ion-icon>
+              </div>
+              <div>
+                <h3 class="h4 item-title">Стерильно</h3>
+                <p class="item-text">Инструменты проходят сухожаровую стерилизацию при 180°C</p>
+              </div>
+            </li>
+            <li class="features-item">
+              <div class="item-icon">
+                <ion-icon name="leaf-outline"></ion-icon>
+              </div>
+              <div>
+                <h3 class="h4 item-title">Натурально</h3>
+                <p class="item-text">Сертифицированные материалы без токсинов и резких запахов</p>
+              </div>
+            </li>
+            <li class="features-item">
+              <div class="item-icon">
+                <ion-icon name="snow-outline"></ion-icon>
+              </div>
+              <div>
+                <h3 class="h4 item-title">Надёжно</h3>
+                <p class="item-text">Покрытие держится до 4 недель без сколов</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="service">
+        <div class="container">
+          <div class="about-banner">
+            <img src="./assets/images/deco-img.png" width="58" height="261" alt="" class="deco-img">
+            <div class="gallery-grid">
+              <div class="gallery-grid-item">
+                <img src="./assets/images/palitra.png" alt="Палитра" class="gallery-grid-img">
+                <img src="./assets/images/tap.png" class="tap-icon-gallery" width="48" height="48" alt="Открыть">
+              </div>
+              <div class="gallery-grid-item">
+                <img src="./assets/images/laky.png" alt="Лаки" class="gallery-grid-img">
+                <img src="./assets/images/tap.png" class="tap-icon-gallery" width="48" height="48" alt="Открыть">
+              </div>
+              <div class="gallery-grid-item">
+                <img src="./assets/images/nails-2.png" alt="Маникюр" class="gallery-grid-img">
+                <img src="./assets/images/tap.png" class="tap-icon-gallery" width="48" height="48" alt="Открыть">
+              </div>
+              <div class="gallery-grid-item">
+                <img src="./assets/images/krasnye-laky.png" alt="Красные лаки" class="gallery-grid-img">
+                <img src="./assets/images/tap.png" class="tap-icon-gallery" width="48" height="48" alt="Открыть">
+              </div>
+              <div class="gallery-grid-item">
+                <img src="./assets/images/about-banner-flower.jpg" alt="Цветы" class="gallery-grid-img">
+                <img src="./assets/images/tap.png" class="tap-icon-gallery" width="48" height="48" alt="Открыть">
+              </div>
+              <div class="gallery-grid-item">
+                <img src="./assets/images/hero3.jpg" alt="Фото" class="gallery-grid-img">
+                <img src="./assets/images/tap.png" class="tap-icon-gallery" width="48" height="48" alt="Открыть">
+              </div>
+              <div class="gallery-grid-item">
+                <img src="./assets/images/nails-1.png" alt="Ногти" class="gallery-grid-img">
+                <img src="./assets/images/tap.png" class="tap-icon-gallery" width="48" height="48" alt="Открыть">
+              </div>
+              <div class="gallery-grid-item">
+                <img src="./assets/images/resnicy.jpg" alt="Ресницы" class="gallery-grid-img">
+                <img src="./assets/images/tap.png" class="tap-icon-gallery" width="48" height="48" alt="Открыть">
+              </div>
+              <div class="gallery-grid-item">
+                <img src="./assets/images/vase.jpg" alt="Ваза" class="gallery-grid-img">
+                <img src="./assets/images/tap.png" class="tap-icon-gallery" width="48" height="48" alt="Открыть">
+              </div>
+            </div>
+          </div>
+          <div class="about-content">
+            <h2 class="h2 section-title">Перечень услуг</h2>
+            <ul class="tab-nav">
+              <li><button class="tab-btn active">Ногти</button></li>
+              <li><button class="tab-btn active">Ресницы</button></li>
+              <li><button class="tab-btn active">Уход</button></li>
+              <li><button class="tab-btn active">Дизайн</button></li>
+            </ul>
+            <div class="tab-content">
+              <p class="section-text">
+                В нашей студии мы используем только профессиональные материалы 
+                и следим за стерильностью инструментов. Каждая процедура — это 
+                индивидуальный подход и забота о вашем комфорте.
+              </p>
+              <ul class="tab-list">
+                <li class="tab-item"><div class="item-icon"><ion-icon name="checkmark-circle"></ion-icon></div><p class="tab-text">Маникюр любой сложности</p></li>
+                <li class="tab-item"><div class="item-icon"><ion-icon name="checkmark-circle"></ion-icon></div><p class="tab-text">Наращивание и ламинирование ресниц</p></li>
+                <li class="tab-item"><div class="item-icon"><ion-icon name="checkmark-circle"></ion-icon></div><p class="tab-text">Педикюр с уходом</p></li>
+                <li class="tab-item"><div class="item-icon"><ion-icon name="checkmark-circle"></ion-icon></div><p class="tab-text">Покрытие гель-лаком</p></li>
+              </ul>
+              <button class="btn btn-primary" onclick="window.location.href='tel:+79853569006'">
+                <span>Записаться</span>
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+        - #WORK POST 
+      -->
+
+      <section class="work-post" id="gallery">
+        <ul class="work-post-list">
+          <li class="work-post-item">
+            <a href="#" class="work-post-link">
+              <img src="./assets/images/work-1.jpg" width="320" height="300" loading="lazy" alt="Работа мастера" class="img-cover">
+              <img src="./assets/images/tap.png" class="tap-icon" width="48" height="48" alt="Открыть изображение">
+            </a>
+          </li>
+          <li class="work-post-item">
+            <a href="#" class="work-post-link">
+              <img src="./assets/images/work-2.jpg" width="320" height="300" loading="lazy" alt="Работа мастера" class="img-cover">
+              <img src="./assets/images/tap.png" class="tap-icon" width="48" height="48" alt="Открыть изображение">
+            </a>
+          </li>
+          <li class="work-post-item">
+            <a href="#" class="work-post-link">
+              <img src="./assets/images/work-3.jpg" width="320" height="300" loading="lazy" alt="Работа мастера" class="img-cover">
+              <img src="./assets/images/tap.png" class="tap-icon" width="48" height="48" alt="Открыть изображение">
+            </a>
+          </li>
+          <li class="work-post-item">
+            <a href="#" class="work-post-link">
+              <img src="./assets/images/work-4.jpg" width="320" height="300" loading="lazy" alt="Работа мастера" class="img-cover">
+              <img src="./assets/images/tap.png" class="tap-icon" width="48" height="48" alt="Открыть изображение">
+            </a>
+          </li>
+          <li class="work-post-item">
+            <a href="#" class="work-post-link">
+              <img src="./assets/images/work-5.jpg" width="320" height="300" loading="lazy" alt="Работа мастера" class="img-cover">
+              <img src="./assets/images/tap.png" class="tap-icon" width="48" height="48" alt="Открыть изображение">
+            </a>
+          </li>
+          <li class="work-post-item">
+            <a href="#" class="work-post-link">
+              <img src="./assets/images/work-1.jpg" width="320" height="300" loading="lazy" alt="Работа мастера" class="img-cover">
+              <img src="./assets/images/tap.png" class="tap-icon" width="48" height="48" alt="Открыть изображение">
+            </a>
+          </li>
+          <li class="work-post-item">
+            <a href="#" class="work-post-link">
+              <img src="./assets/images/work-2.jpg" width="320" height="300" loading="lazy" alt="Работа мастера" class="img-cover">
+              <img src="./assets/images/tap.png" class="tap-icon" width="48" height="48" alt="Открыть изображение">
+            </a>
+          </li>
+          <li class="work-post-item">
+            <a href="#" class="work-post-link">
+              <img src="./assets/images/work-3.jpg" width="320" height="300" loading="lazy" alt="Работа мастера" class="img-cover">
+              <img src="./assets/images/tap.png" class="tap-icon" width="48" height="48" alt="Открыть изображение">
+            </a>
+          </li>
+          <li class="work-post-item">
+            <a href="#" class="work-post-link">
+              <img src="./assets/images/work-4.jpg" width="320" height="300" loading="lazy" alt="Работа мастера" class="img-cover">
+              <img src="./assets/images/tap.png" class="tap-icon" width="48" height="48" alt="Открыть изображение">
+            </a>
+          </li>
+          <li class="work-post-item">
+            <a href="#" class="work-post-link">
+              <img src="./assets/images/work-5.jpg" width="320" height="300" loading="lazy" alt="Работа мастера" class="img-cover">
+              <img src="./assets/images/tap.png" class="tap-icon" width="48" height="48" alt="Открыть изображение">
+            </a>
+          </li>
+          <li class="work-post-item">
+            <a href="#" class="work-post-link">
+              <img src="./assets/images/work-1.jpg" width="320" height="300" loading="lazy" alt="Работа мастера" class="img-cover">
+              <img src="./assets/images/tap.png" class="tap-icon" width="48" height="48" alt="Открыть изображение">
+            </a>
+          </li>
+          <li class="work-post-item">
+            <a href="#" class="work-post-link">
+              <img src="./assets/images/work-2.jpg" width="320" height="300" loading="lazy" alt="Работа мастера" class="img-cover">
+              <img src="./assets/images/tap.png" class="tap-icon" width="48" height="48" alt="Открыть изображение">
+            </a>
+          </li>
+          <li class="work-post-item">
+            <a href="#" class="work-post-link">
+              <img src="./assets/images/work-3.jpg" width="320" height="300" loading="lazy" alt="Работа мастера" class="img-cover">
+              <img src="./assets/images/tap.png" class="tap-icon" width="48" height="48" alt="Открыть изображение">
+            </a>
+          </li>
+          <li class="work-post-item">
+            <a href="#" class="work-post-link">
+              <img src="./assets/images/work-4.jpg" width="320" height="300" loading="lazy" alt="Работа мастера" class="img-cover">
+              <img src="./assets/images/tap.png" class="tap-icon" width="48" height="48" alt="Открыть изображение">
+            </a>
+          </li>
+          <li class="work-post-item">
+            <a href="#" class="work-post-link">
+              <img src="./assets/images/work-5.jpg" width="320" height="300" loading="lazy" alt="Работа мастера" class="img-cover">
+              <img src="./assets/images/tap.png" class="tap-icon" width="48" height="48" alt="Открыть изображение">
+            </a>
+          </li>
+          <li class="work-post-item">
+            <a href="#" class="work-post-link">
+              <img src="./assets/images/work-1.jpg" width="320" height="300" loading="lazy" alt="Работа мастера" class="img-cover">
+              <img src="./assets/images/tap.png" class="tap-icon" width="48" height="48" alt="Открыть изображение">
+            </a>
+          </li>
+          <li class="work-post-item">
+            <a href="#" class="work-post-link">
+              <img src="./assets/images/work-2.jpg" width="320" height="300" loading="lazy" alt="Работа мастера" class="img-cover">
+              <img src="./assets/images/tap.png" class="tap-icon" width="48" height="48" alt="Открыть изображение">
+            </a>
+          </li>
+          <li class="work-post-item">
+            <a href="#" class="work-post-link">
+              <img src="./assets/images/work-3.jpg" width="320" height="300" loading="lazy" alt="Работа мастера" class="img-cover">
+              <img src="./assets/images/tap.png" class="tap-icon" width="48" height="48" alt="Открыть изображение">
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section id="cta" class="section cta">
+        <div class="container">
+          <div class="cta-content">
+            <h2 class="h2 section-title">320+ выполненных работ</h2>
+            <button class="btn btn-outline" id="ctaReviewsBtn">
+              <span>Отзывы</span>
+              <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+          <figure class="cta-banner cta-image-wrapper">
+            <img src="assets/images/kushetka.png" loading="lazy" alt="Кушетка в студии" class="img-cover cta-image">
+            <img src="./assets/images/tap.png" class="tap-icon-cta" width="48" height="48" alt="Открыть">
+          </figure>
+        </div>
+      </section>
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" id="contact">
+        <div class="container">
+          <h2 class="h2 section-title">Контакты</h2>
+          <div class="contact-wrapper">
+            <div class="contact-info">
+              <div class="contact-card">
+                <div class="contact-icon"><ion-icon name="call-outline"></ion-icon></div>
+                <div class="contact-details">
+                  <h3 class="contact-title">Телефон</h3>
+                  <a href="tel:+79853569006" class="contact-text">+7 (985) 356-90-06</a>
+                  <p class="contact-note">Ежедневно с 10:00 до 21:00</p>
+                </div>
+              </div>
+              <div class="contact-card">
+                <div class="contact-icon"><ion-icon name="location-outline"></ion-icon></div>
+                <div class="contact-details">
+                  <h3 class="contact-title">Адрес</h3>
+                  <p class="contact-text">Московская обл., Пушкинский р-н, п. Зелёный, д. 12А</p>
+                  <p class="contact-note">Доехать можно на автобусах 21, 317, а также 21Д, 23, 43</p>
+                  <p class="contact-note">Остановка "Зелёный" (соседняя остановка — "Зверосовхоз")</p>
+                </div>
+              </div>
+              <div class="contact-card">
+                <div class="contact-icon"><ion-icon name="time-outline"></ion-icon></div>
+                <div class="contact-details">
+                  <h3 class="contact-title">Режим работы</h3>
+                  <p class="contact-text">Пн-Вс: 10:00 — 21:00</p>
+                  <p class="contact-note">Запись по телефону</p>
+                </div>
+              </div>
+            </div>
+            <div class="contact-photo">
+              <img src="./assets/images/from_outside.jpg" alt="Фасад студии" class="contact-img">
+              <div class="contact-photo-caption">
+                <ion-icon name="camera-outline"></ion-icon>
+                <span>Вход в студию</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer-list">
+        <li></li>
+      </ul>
+      <p class="copyright">
+        2026 &#169; Автор: <a href="https://ashotkazaryan.ru" class="copyright-link">ashotkazaryan.ru</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Модальное окно для картинок -->
+  <div id="imageModal" class="modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-img" id="modalImage">
+  </div>
+
+  <!-- Модальное окно для отзывов -->
+  <div id="reviewsModal" class="reviews-modal">
+    <div class="reviews-modal-card">
+      <div class="reviews-header">
+        <h3 class="reviews-header-title">
+          <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+          Отзывы клиентов
+        </h3>
+      </div>
+      <div class="reviews-body">
+        <div class="review-item">
+          <div class="review-user">
+            <img src="assets/images/clients/1.jpg" alt="Анна" class="review-avatar">
+            <div class="review-user-info">
+              <div class="review-name">Анна С.</div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">Делала маникюр — очень красиво! Спасибо Кристине! 💅</p>
+          <div class="review-date">15 марта 2026</div>
+        </div>
+        <div class="review-item">
+          <div class="review-user">
+            <img src="assets/images/clients/nophoto.jpg" alt="Екатерина" class="review-avatar">
+            <div class="review-user-info">
+              <div class="review-name">Екатерина В.</div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">Нарастила ресницы — эффект потрясающий! Рекомендую всем 👁️✨</p>
+          <div class="review-date">2 февраля 2026</div>
+        </div>
+        <div class="review-item">
+          <div class="review-user">
+            <img src="assets/images/clients/3.jpg" alt="Мария" class="review-avatar">
+            <div class="review-user-info">
+              <div class="review-name">Мария Д.</div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">Очень уютная студия, приятная атмосфера. Результат превзошёл ожидания! 🌸</p>
+          <div class="review-date">20 января 2026</div>
+        </div>
+      </div>
+      <div class="reviews-footer">
+        <button class="reviews-footer-btn" id="closeReviewsModalBtn">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
